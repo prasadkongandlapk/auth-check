@@ -1,0 +1,12 @@
+.header-bg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pp {
+  margin-right: 10px;
+}
+button {
+  height: 20px;
+}
