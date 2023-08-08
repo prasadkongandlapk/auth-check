@@ -41,8 +41,8 @@ class Login extends Component {
   render() {
     const {name, password} = this.state
     const jwtToken = Cookies.get('jwt_token')
-    if (jwtToken === undefined) {
-      return <Redirect />
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
     }
     return (
       <div className="bg">
@@ -50,7 +50,7 @@ class Login extends Component {
         <form onSubmit={this.submit}>
           <input value={name} onChange={this.name} type="text" />
           <input value={password} onChange={this.pass} type="password" />
-          <button type="submit">Login</button>
+          <button type="submit">Login with Sample Creds</button>
         </form>
       </div>
     )
