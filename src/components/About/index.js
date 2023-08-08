@@ -1,12 +1,12 @@
 import './index.css'
 import Header from '../Header'
+import LogoutButton from '../LogoutButton'
 
 const About = () => (
   <div className="adflksj">
     <Header />
-
     <h1>About Route</h1>
-    <button type="button">Logout</button>
+    <LogoutButton />
   </div>
 )
 

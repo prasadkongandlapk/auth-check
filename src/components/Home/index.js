@@ -1,11 +1,14 @@
 import './index.css'
+
+import LogoutButton from '../LogoutButton'
 import Header from '../Header'
 
 const Home = () => (
   <div className="bg">
     <Header />
     <h1>Home Route</h1>
-    <button type="button">Logout</button>
+    <LogoutButton />
   </div>
 )
+
 export default Home

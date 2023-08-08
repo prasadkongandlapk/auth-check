@@ -1,1 +1,10 @@
-/* Write your CSS code here */
+.fdsljka {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.ing {
+  height: 200px;
+  width: 200px;
+}

@@ -1,6 +1,7 @@
 import './index.css'
-import {Cookies} from 'js-cookie'
+import Cookies from 'js-cookie'
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 
 class Login extends Component {
   state = {name: '', password: ''}
@@ -39,6 +40,10 @@ class Login extends Component {
 
   render() {
     const {name, password} = this.state
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken === undefined) {
+      return <Redirect />
+    }
     return (
       <div className="bg">
         <h1>Please Login</h1>
